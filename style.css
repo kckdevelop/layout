@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+  #container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    background-color: #666;
+    
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  .kiri {
+    float: left;
+    width: 20%;
+    height: 600px; 
+    background: #ccc;
+    
+  }
+  .menu{
+      background: #fff;
+      padding: 20px;
+  }
+  .login{
+      
+      padding: 20px;
+  }
+  .kanan {
+    float: right;
+    width: 20%;
+    height: 600px; 
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 60%;
+    background-color: #f1f1f1;
+    height: 600px; 
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    background-color: #777;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    .kiri,.kanan, article {
+      width: 100%;
+      height: auto;
+    }
+  }
